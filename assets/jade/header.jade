@@ -1,16 +1,30 @@
-header
-	.header-position
-		h1.logo Richard Blake
-
-		nav.site-nav
-			ul
-				li: a(href="#about") About
-				li: a(href="#youtube") Youtube
-				li: a(href="#mentoring") Mentoring
-				li: a(href="#articles") Articles
-				li: a(href="#vine") Vine
-				li: a(href="#design") Design
-				li: a(href="#notes") Notes
-				li: a(href="#contact") Contact
-
-		a.email-link(href="mailto:doz1010@gmail.com")  +email me
+header 
+	.stars
+	.container.woozyHeader
+		.row
+			.three.columns
+				a(href="http://woozylabs.com")
+					img.woozyLogo(src="assets/img/{{site.data.settings.logo}}", alt="Woozy")
+			img.mobileIcon(src="assets/img/mobileIcon.png")
+			.six.columns.u-pull-right.social
+				ul
+					li.blog: a(href="http://blog.woozylabs.com/", target="_blank") Blog
+				ul
+					| {% for social in site.data.settings.social-links %}
+					li
+						a(href="{{social.url}}", target="_blank")
+							img(src="assets/img/{{social.name}}.png", class="{{social.name}}")
+					| {% endfor %} 
+								
+	h1 {{site.data.settings.intro-title}}
+	p {{site.data.settings.intro-blurb}}
+	.store
+		.three.columns.offset-by-three
+			a(href="https://itunes.apple.com/kn/app/woozy-labs-unite-against-germs/id969894256?mt=8")
+				img.appStore(src="assets/img/appStore.png")
+		.three.columns
+			a(href="http://play.google.com/store/apps/details?id=com.metrostarsystems.woozy")
+				img.googleStore(src="assets/img/googleStore.png") 
+	div(style="clear:both")
+	a(href="#")
+		img(src="assets/img/pageDown.png")
