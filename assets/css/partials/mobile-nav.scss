@@ -1,0 +1,41 @@
+ .navigationwrap {
+    height:0rem;
+    transition:height 0.5s; 
+    -webkit-transition:height 0.5s;
+    -ms-transition:height 0.5s;
+    background-color:#FFF;
+    overflow:hidden;
+    position:relative;
+   // margin-top: 2.5rem;
+    &.activeNav {
+      height: 210px;
+    }
+    .navigation{
+      z-index: 100;
+      display: block;
+      ul{
+        li{
+          padding: 0.8125rem 0rem 0.8125rem 0rem;
+          border-bottom: 0.0625rem solid #fff;
+          margin-bottom: 0rem;
+          list-style-type: none;
+          text-align: center;
+          background: #ec4f4f;
+          a{
+            padding: 0.625rem 0rem 0.625rem 0.6875rem;
+            color: #fff;
+            font-weight: lighter;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          &:hover {
+            background-color: #c74242;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  } 

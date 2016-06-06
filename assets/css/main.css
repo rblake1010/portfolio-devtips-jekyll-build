@@ -4,6 +4,8 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,300);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -360,10 +362,10 @@ th {
   padding: 0px; }
 
 body {
-  background-color: #eaeaea;
+  background: url(/assets/img/background.jpg) #11e7c1 repeat-x;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -374,3 +376,76 @@ a {
   outline: 0; }
   a:hover, a:focus {
     color: #40a6ff; }
+
+.huge, h1 {
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Biryani', sans-serif;
+  font-size: 66px; }
+
+.large, h2 {
+  font-family: 'Biryani', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 66px; }
+  @media screen and (min-width: 320px) and (max-width: 568px) {
+    .large, h2 {
+      font-size: 35px; } }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; }
+
+.navigationwrap {
+  height: 0rem;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  background-color: #FFF;
+  overflow: hidden;
+  position: relative; }
+  .navigationwrap.activeNav {
+    height: 210px; }
+  .navigationwrap .navigation {
+    z-index: 100;
+    display: block; }
+    .navigationwrap .navigation ul li {
+      padding: 0.8125rem 0rem 0.8125rem 0rem;
+      border-bottom: 0.0625rem solid #fff;
+      margin-bottom: 0rem;
+      list-style-type: none;
+      text-align: center;
+      background: #ec4f4f; }
+      .navigationwrap .navigation ul li a {
+        padding: 0.625rem 0rem 0.625rem 0.6875rem;
+        color: #fff;
+        font-weight: lighter;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold; }
+      .navigationwrap .navigation ul li:hover {
+        background-color: #c74242; }
+        .navigationwrap .navigation ul li:hover a {
+          color: #fff; }
+
+header {
+  height: 975px;
+  overflow: hidden;
+  position: relative; }
+  @media screen and (min-width: 320px) and (max-width: 568px) {
+    header {
+      padding-bottom: 23px;
+      height: auto; } }
+  header .mobileIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 89px;
+    display: none; }
+    @media (max-width: 1407px) {
+      header .mobileIcon {
+        display: block; } }
+
+.wrapper {
+  overflow: hidden; }

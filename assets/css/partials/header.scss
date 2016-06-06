@@ -1,0 +1,19 @@
+header{
+	height: 975px;
+	overflow:hidden;
+	position:relative;
+	@media screen and (min-width: 320px) and (max-width: 568px){
+    padding-bottom:23px; 
+    height: auto;
+  }
+  .mobileIcon{
+  	cursor: pointer;
+  	position: absolute;
+  	right:15px;
+  	top:89px;
+  	display: none;
+  	@media(max-width:1407px){
+  		display: block;
+  	}
+  }
+}

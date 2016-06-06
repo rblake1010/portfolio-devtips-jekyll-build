@@ -10,12 +10,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .huge, h1{
-  
-
+	font-weight:700; 
+  color:#fff; 
+  font-family: 'Biryani', sans-serif; 
+  font-size:66px;
 }
 
 .large, h2{
- 
+ 	 font-family: 'Biryani', sans-serif;
+   font-weight:600; 
+   color: #fff; 
+   text-transform: uppercase; 
+   font-size: 66px;
+    @media screen and (min-width: 320px) and (max-width: 568px){
+   font-size:35px;
+  } 
 }
 
 .bigger, h3{
@@ -34,7 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 // Basic Text Style
 
 p{
-  
+  font-family: 'Montserrat', sans-serif; 
+  color: #fff;
 }
 
 em{
