@@ -2,7 +2,7 @@ header{
 	height: 975px;
 	overflow:hidden;
 	position:relative;
-	@media screen and (min-width: 320px) and (max-width: 568px){
+	@include media($mobile){
     padding-bottom:23px; 
     height: auto;
   }
@@ -15,5 +15,14 @@ header{
   	@media(max-width:1407px){
   		display: block;
   	}
+  }
+  .stars{
+    background: url(/assets/img/starsBig.png) repeat-x;
+    height: 1066px;    
+    position:relative;
+    width:100%;
+    -webkit-animation: backdrop linear 40s infinite reverse;
+    animation: backdrop linear 40s infinite reverse;
+    margin: 0 auto;
   }
 }
