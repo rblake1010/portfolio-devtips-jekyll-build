@@ -5,24 +5,178 @@ header{
 	@include media($mobile){
     padding-bottom:23px; 
     height: auto;
+  }  
+  h1{
+    text-align: center;
+    margin: 144px 0px 15px 0px;
+    @include media($mobile){
+      font-size: 32px !important;
+      margin: 14px 0px 15px 0px !important;
+    }
   }
-  .mobileIcon{
-  	cursor: pointer;
-  	position: absolute;
-  	right:15px;
-  	top:89px;
-  	display: none;
-  	@media(max-width:1407px){
-  		display: block;
-  	}
-  }
-  .stars{
-    background: url(/assets/img/starsBig.png) repeat-x;
-    height: 1066px;    
+  h2{
+    font-size: 40px;
+    text-align: center;
     position:relative;
-    width:100%;
-    -webkit-animation: backdrop linear 40s infinite reverse;
-    animation: backdrop linear 40s infinite reverse;
-    margin: 0 auto;
+    top:47px;
+    @include media($mobile){
+      font-size: 32px;
+      margin-bottom: 0px;
+      top:0px;
+    }
+  }
+  p{
+    font-size: 31.76px;
+    text-align: center;
+    line-height:41px;
+    @include media($mobile){
+      font-size: 21px;
+      line-height: 34px;
+    }
+  }
+  .moon{
+    position: absolute;
+    bottom: 244px;
+    left: 338px;
+    visibility: hidden;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  .planet{
+    position: absolute;
+    bottom: 276px;
+    right: 305px;
+    visibility: hidden;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  .earth{
+    position: absolute;
+    bottom: 200px;
+    right: 448px;
+    visibility: hidden;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+  .woozyLogo{
+    margin-top:91px;
+    @include media($mobile){
+      margin-bottom: 30px;
+      max-width: 150px;
+      display: block;
+    }
+    @media (max-width: 373px){
+      max-width: 130px;
+    }
+  }
+  .appStoreGray{
+    display: block;
+    margin: 50px auto 0px auto;
+  }
+  .pageDown{
+    display: block;
+    margin: 50px auto 0px auto;
+    -webkit-animation: float 1s 2s linear infinite alternate;
+    animation: float 1s 2s linear infinite alternate;
+    @include media($mobile){
+      -webkit-animation: none;
+      animation: none;
+    }
   }
 }
+
+.mobileIcon{
+  cursor: pointer;
+  position: absolute;
+  right:15px;
+  top:89px;
+  display: none;
+  @media(max-width:1407px){
+    display: block;
+  }
+}
+
+
+.stars{
+  background: url(/assets/img/starsBig.png) repeat-x;
+  height: 1066px;    
+  position:relative;
+  width:100%;
+  -webkit-animation: backdrop linear 40s infinite reverse;
+  animation: backdrop linear 40s infinite reverse;
+  margin: 0 auto;
+  @include media($mobile){
+    display: none;
+  }
+}
+
+.woozyHeader{
+  position:relative;
+  top:-1066px;
+  @include media($mobile){
+    top:0px;
+  }
+}
+
+
+.social{
+  margin: 91px 0px 0px 0px;
+  @media (max-width: 1407px){
+    display: none;
+  }
+  ul{
+    float: right;
+    &:first-child{
+      float: left;
+      width: 51%;
+      text-align: right;
+      @include media($mobile){
+        float: none !important;
+        width: 100%;
+      }
+    }
+    @include media($mobile){
+      float: none;
+      text-align: center;
+      overflow: hidden;
+      margin-bottom:3px;
+    }
+    li{
+      float: left;
+      list-style-type: none;
+      text-align: center;
+      @include media($mobile){
+        display: inline-block;
+        float: none;
+      }
+      &.blog{
+        font-size: 25px;
+        color: #fff;
+        font-family: 'Biryani', sans-serif;
+        position: relative;
+        width: 100%;
+        top: 3px;
+        text-align: right; 
+        @include media($mobile){
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        a{
+          color:#fff;
+          text-decoration: none;
+          &:hover{
+            color:#05ad7d;
+          }           
+        }
+      }
+      a{
+        img{
+          margin:0px 12px 0px 0px;
+        }
+      }
+    }
+  }  
+}
+
+@import 'animation';

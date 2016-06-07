@@ -1,0 +1,21 @@
+// Main CSS Animation Page
+
+
+
+// Star Animation
+@-webkit-keyframes backdrop {
+  100% {background-position: -3004px 0;}
+}
+@keyframes backdrop {
+  100% {background-position: -3004px 0;}
+}
+
+// Floating Icon
+@-webkit-keyframes float {
+  0% {margin-top: 50px;}
+  100% {margin-top: 70px;}
+}
+@keyframes float {
+  0% {margin-top: 50px;}
+  100% {margin-top: 70px;}
+}
