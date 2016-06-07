@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 
  // Device
-  function responsive(){		
+  function responsive(){ 	
 		
         var winWidth = $(window).width();
         if(winWidth >= 1024) { //tablet
