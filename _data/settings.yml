@@ -3,29 +3,7 @@ title: Woozy | Unite Against Germs
 description: Woozy is a community-based flu and germ tracker. 
              Unite with others in your community to submit anonymous germ 
              reports that are collected in our state-of-the-art Invasion Station.
-
-mobile-links:
-- title: Visit Woozy
-  url: http://blog.woozylabs.com/
-- title: Contact Us
-  url: mailto:woozylabs@gmail.com
-- title: Twitter
-  url: https://twitter.com/WoozyLabs
-- title: Facebook
-  url: https://www.facebook.com/pages/Woozy-Labs/394275827412969
-- title: Pintrest 
-  url: https://www.pinterest.com/woozylabs/
-
-social-links:
-- url: mailto:woozylabs@gmail.com
-  name: email
-- url: https://twitter.com/WoozyLabs
-  name: twitter
-- url: https://www.facebook.com/pages/Woozy-Labs/394275827412969
-  name: facebook
-- url: https://www.pinterest.com/woozylabs/
-  name: pinterest
-
+             
 logo: logo.png
 
 intro-title: Unite Against Germs

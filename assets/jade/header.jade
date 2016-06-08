@@ -1,3 +1,4 @@
+include mixins/nav  
 header 
 	.stars
 	.container.woozyHeader
@@ -6,15 +7,8 @@ header
 				a(href="http://woozylabs.com")
 					img.woozyLogo(src="assets/img/{{site.data.settings.logo}}", alt="Woozy")
 			img.mobileIcon(src="assets/img/mobileIcon.png")
-			.six.columns.u-pull-right.social
-				ul
-					li.blog: a(href="http://blog.woozylabs.com/", target="_blank") Blog
-				ul
-					| {% for social in site.data.settings.social-links %}
-					li
-						a(href="{{social.url}}", target="_blank")
-							img(src="assets/img/{{social.name}}.png", class="{{social.name}}")
-					| {% endfor %} 
+			.six.columns.u-pull-right.nav 
+				+nav 
 								
 		h1 {{site.data.settings.intro-title}}
 		p {{site.data.settings.intro-blurb}}
@@ -30,4 +24,4 @@ header
 			img.pageDown(src="assets/img/pageDown.png" , alt="")
 	img.moon(src="assets/img/moon.png", alt="")
 	img.earth(src="assets/img/earth.png", alt="")
-	img.planet(src="assets/img/planet.png", alt="")
+	img.planet(src="assets/img/planet.png", alt="") 

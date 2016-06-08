@@ -1,7 +1,5 @@
+include mixins/nav
 .navigationwrap
 	.navigation
-		ul
-			| {% for mobile in site.data.settings.mobile-links %}
-			li: a(href="{{mobile.url}}") {{mobile.title}}
-			| {% endfor %}
+		+nav  
 

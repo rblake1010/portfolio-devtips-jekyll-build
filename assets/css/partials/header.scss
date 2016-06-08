@@ -118,6 +118,68 @@ header{
   }
 }
 
+ 
+
+.nav{
+  @media (max-width: 1407px){
+    display: none;
+  }
+  ul{
+    margin-top:91px;
+    text-align: right;
+    li{
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: middle;
+      &.email{
+        a{
+          background-image: url(/assets/img/email.png);
+          @include social-icon;
+          &:hover{
+            background-image: url(/assets/img/emailHover.png);
+          }
+        }
+      }
+      &.twitter{
+        a{
+          background-image: url(/assets/img/twitter.png);
+          @include social-icon;
+          &:hover{
+            background-image: url(/assets/img/twitterHover.png);
+          }
+        }
+      }
+      &.facebook{
+        a{
+          background-image: url(/assets/img/facebook.png);
+          @include social-icon;
+          &:hover{
+            background-image: url(/assets/img/facebookHover.png);
+          }
+        }
+      }
+      &.pinterest{ 
+        a{
+          background-image: url(/assets/img/pinterest.png);
+          @include social-icon; 
+          &:hover{
+            background-image: url(/assets/img/pinterestHover.png);
+          }
+        }
+      }
+      a{
+        font-size: 25px;
+        color: #fff;
+        font-family: 'Biryani', sans-serif;
+        &:hover{
+          color: red;
+        }               
+      }
+    }
+  }
+}
+
 
 .social{
   margin: 91px 0px 0px 0px;
