@@ -19,3 +19,13 @@
   0% {margin-top: 50px;}
   100% {margin-top: 70px;}
 }
+
+
+@-webkit-keyframes blastoff {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 -2299px;}
+}
+@keyframes blastoff {
+  0% { background-position: 0 0;}
+  100% {background-position: 0 -2299px;}
+}

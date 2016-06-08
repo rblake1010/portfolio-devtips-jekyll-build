@@ -1,0 +1,91 @@
+.report{
+	min-height:986px;
+	position: relative;
+	@include media($mobile){
+		padding:25px;
+		min-height: inherit;
+	}
+	.sickMobile{
+		margin-top: 10px;
+		visibility: hidden;
+		display: none;
+	}
+	.sky{
+		position:relative;
+		margin:0 auto;
+		max-width: 1000px;
+		.leftCloud{
+			@include cloud;
+			right: 500px;
+			bottom:-466px;
+		}
+		.leftCloud1{
+			@include cloud;
+			left:147px; 
+			top:219px;
+			animation-delay:1.5s; 
+			-webkit-animation-delay:1.5s;
+		}
+		.leftCloud2{
+			@include cloud;
+			left:-89px;
+			top:490px;
+			animation-delay:2s;
+			-webkit-animation-delay:2s;
+		}
+		.rightCloud{
+			@include cloud;
+			right:32px;
+			top:22px;
+			animation-delay:1s;
+			-webkit-animation-delay:1s;
+		}
+		.rightCloud1{
+			@include cloud;
+			left:-40px;
+			top:37px;
+			animation-delay:2.5s;
+			-webkit-animation-delay:2.5s;
+		}
+		.rightCloud2{
+			@include cloud;
+			right:-48px;
+			top:441px;
+			animation-delay:3s;
+			-webkit-animation-delay:3s;
+		}
+		.sickBlurb{
+			position:absolute;
+			display: none;
+			left: 333px;
+			top:25px;
+			display: none;
+			height: auto;
+		}
+		.blastoff{
+			background: url(/assets/img/blastoff.png) no-repeat;
+			width: 102px;
+			height:209px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: rotate(25deg);
+			margin:467.5px 0px 0px 100px;
+			display: none;
+			&.play{
+				animation: blastoff 1s steps(11) infinite;
+			}
+		}
+		.rocketship{
+			background: url(/assets/img/rocketship.png) no-repeat;
+			width: 207px;
+			height:339px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin: 159px 0px 0px 150px;
+			transform: rotate(25deg);
+			display: none;
+		}
+	}
+}

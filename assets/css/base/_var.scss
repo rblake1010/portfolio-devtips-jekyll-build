@@ -19,6 +19,11 @@ $baseFontSize: 16;
   display: block; 
 }
 
+@mixin cloud{
+	position: absolute;
+	visibility:hidden;
+}
+
 // Device Breakpoint Definitions
 $mobile: new-breakpoint(min-width 320px max-width 480px);
 $tablet: new-breakpoint(min-width 768px max-width 1024px); 
