@@ -3675,6 +3675,21 @@ header {
   height: 695px;
   background: #05ad7d;
   background: url(/assets/img/bg-lawn.png) #05ad7d 50% 50% no-repeat; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .play {
+      height: auto; } }
+  .play .playContent {
+    margin: 270px 0px 0px 0px; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .play .playContent {
+        margin: 30px 0px 0px 0px; } }
+  .play .playImage {
+    margin: 117px auto 40px auto;
+    display: block; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .play .playImage {
+        margin: 21px auto 40px auto;
+        display: block; } }
 
 .wrapper {
   overflow: hidden; }

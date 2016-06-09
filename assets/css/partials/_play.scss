@@ -1,0 +1,22 @@
+.play{
+	height: 695px;
+  background: #05ad7d;
+  background: url(/assets/img/bg-lawn.png) #05ad7d 50% 50% no-repeat;
+  @include media($mobile){
+  	height: auto;
+  }
+  .playContent{
+  	margin:270px 0px 0px 0px;
+  	@include media($mobile){
+  		margin:30px 0px 0px 0px;
+  	}
+  }
+  .playImage{
+  	margin: 117px auto 40px auto;
+  	display: block;
+  	@include media($mobile){
+  		margin:21px auto 40px auto;
+  		display: block;
+  	}
+  }
+}
