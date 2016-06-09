@@ -3531,5 +3531,145 @@ header {
       transform: rotate(25deg);
       display: none; }
 
+.track {
+  min-height: 808px;
+  position: relative; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track {
+      min-height: inherit;
+      overflow: hidden; } }
+  .track .trackHeight {
+    min-height: 812px; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .track .trackHeight {
+        min-height: 460px; } }
+  .track h2 {
+    text-align: center;
+    position: relative;
+    top: -50px; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .track h2 {
+        top: 0; } }
+  .track p {
+    text-align: center;
+    position: relative;
+    top: -60px; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .track p {
+        top: 0; } }
+  .track .greenWrapper {
+    background: #0ac083;
+    height: 79px;
+    position: relative;
+    padding: 0px 9px; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .track .greenWrapper {
+        padding: 0px 9px; } }
+  .track .trackMobile {
+    padding: 0px 0px 42px 0px;
+    visibility: hidden;
+    min-width: 259px;
+    max-width: 259px;
+    display: block;
+    margin: 0 auto; }
+  .track .trackTablet {
+    visibility: hidden;
+    display: none; }
+  .track img {
+    position: absolute; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .track img {
+        position: static; } }
+
+.track img.town {
+  bottom: 3px;
+  top: 50%;
+  left: 50%;
+  width: 904px;
+  height: 211px;
+  margin-left: -452px;
+  margin-top: -169.5px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.town {
+      height: auto;
+      margin: 0px;
+      position: absolute;
+      max-width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 21px;
+      padding: 0px 8px; } }
+
+.track img.mobile-pin {
+  z-index: 500;
+  visibility: hidden;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  position: absolute;
+  bottom: 9px;
+  left: 13px;
+  width: 14.4%; }
+
+.track img.lg-pin {
+  bottom: 118px;
+  left: 194px;
+  z-index: 500;
+  visibility: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.lg-pin {
+      display: none; } }
+
+.track img.lgBlurb {
+  top: 310px;
+  left: 38px;
+  visibility: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.lgBlurb {
+      visibility: visible;
+      display: none;
+      margin: 0 auto; } }
+
+.track img.small-pin {
+  bottom: 81px;
+  left: 654px;
+  z-index: 500;
+  visibility: hidden;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.small-pin {
+      display: none; } }
+
+.track img.smallBlurb {
+  top: 318px;
+  left: 436px;
+  visibility: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.smallBlurb {
+      visibility: visible;
+      display: none;
+      margin: 0 auto; } }
+
+.track img.streplg-pin {
+  bottom: -55px;
+  right: 48px;
+  z-index: 500;
+  visibility: hidden;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.streplg-pin {
+      display: none; } }
+
+.track img.strepBlurb {
+  bottom: 103px;
+  right: -55px;
+  visibility: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .track img.strepBlurb {
+      visibility: visible;
+      display: none;
+      margin: 0 auto; } }
+
 .wrapper {
   overflow: hidden; }

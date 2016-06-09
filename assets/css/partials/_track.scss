@@ -1,0 +1,144 @@
+.track{
+	min-height:808px;
+	position: relative;
+	@include media($mobile){
+		min-height: inherit;
+		overflow: hidden;
+	}
+	.trackHeight{
+		min-height: 812px;
+		@include media($mobile){
+		min-height:460px;
+		}
+	}
+	h2{
+		text-align: center;
+		position:relative;
+		top:-50px;
+		@include media($mobile){
+		top:0;
+		}
+	}
+	p{
+		text-align: center;
+		position:relative;
+		top:-60px;
+		@include media($mobile){
+		top:0;
+		}
+	}
+	.greenWrapper{
+		background: #0ac083;
+	  height: 79px;
+	  position: relative;
+	  padding: 0px 9px;
+	  @include media($mobile){
+	  	padding:0px 9px;
+	  }
+	}
+	.trackMobile{
+		padding: 0px 0px 42px 0px;
+	  visibility: hidden;
+	  min-width: 259px;
+	  max-width: 259px;
+	  display: block;
+	  margin: 0 auto;
+	}
+	.trackTablet{
+		visibility: hidden;
+		display: none;
+	}
+	img{
+		position:absolute;
+		@include media($mobile){
+		position:static;
+		}
+	}
+}
+
+.track img{
+	&.town{
+		bottom: 3px;
+	  top: 50%;
+	  left: 50%;
+	  width: 904px;
+	  height: 211px;
+	  margin-left: -452px;
+	  margin-top: -169.5px;
+	  @include media($mobile){
+	  	height: auto;
+	    margin: 0px;
+	    position: absolute;
+	    max-width: 100%;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    top: 21px;
+	    padding: 0px 8px;
+	  }
+	}
+	&.mobile-pin{
+		 z-index: 500;
+	  visibility: hidden;
+	  -webkit-animation-delay: 1s;
+	  animation-delay: 1s;
+	  position: absolute;
+	  bottom: 9px;
+	  left: 13px;
+	  width: 14.4%;
+	}
+	&.lg-pin{
+		bottom: 118px;
+	  left: 194px;
+	  z-index: 500;
+	  visibility: hidden;
+	  @include media($mobile){
+			@include pinHidden;
+	  }
+	}
+	&.lgBlurb{
+		top: 310px;
+	  left: 38px;
+	  visibility: hidden;
+	  @include media($mobile){
+			@include blurbHidden;
+	  }
+	}
+	&.small-pin{
+		bottom: 81px;
+		left: 654px;
+		z-index: 500;
+		visibility: hidden;
+		-webkit-animation-delay: 1.5s;
+		animation-delay: 1.5s;
+		@include media($mobile){
+			@include pinHidden;
+	  }
+	}
+	&.smallBlurb{
+		top: 318px;
+	  left: 436px;
+	  visibility: hidden;
+	  @include media($mobile){
+			@include blurbHidden;
+	  }
+	}
+	&.streplg-pin{
+		bottom: -55px;
+	  right: 48px;
+	  z-index: 500;
+	  visibility: hidden;
+	  -webkit-animation-delay: 3s;
+	  animation-delay: 3s;
+	  @include media($mobile){
+			@include pinHidden;
+	  }
+	}
+	&.strepBlurb{
+		bottom: 103px;
+	  right: -55px;
+	  visibility: hidden;
+	  @include media($mobile){
+			@include blurbHidden;
+	  }
+	}
+}
