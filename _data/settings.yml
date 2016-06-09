@@ -16,3 +16,7 @@ report-blurb: Submit an <strong>anonymous</strong> report to notify your <strong
 
 track-title: Track
 track-blurb: Reports from your <strong>community</strong> are compiled in the <strong>invasion station</strong> so you can see which germs you’re <strong>up against</strong>.
+
+verify-title: Verify
+verify-blurb: As a <strong>health care professional or school administrator</strong>, you can request a verified account to share reports with your community.
+verify-image: verifyImage.png
