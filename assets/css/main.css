@@ -152,7 +152,9 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border: 0;
+  max-width: 100%;
+  height: auto; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -3133,6 +3135,9 @@ body {
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      overflow-x: hidden; } }
 
 a {
   color: red;
@@ -3153,7 +3158,10 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-size: 66px; }
-  @media screen and (min-width: 320px) and (max-width: 568px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .large, h2 {
+      font-size: 46px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     .large, h2 {
       font-size: 35px; } }
 
@@ -3162,10 +3170,70 @@ p {
   color: #fff;
   font-size: 26px;
   line-height: 34px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    p {
+      font-size: 19px;
+      line-height: 28px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     p {
       font-size: 19px;
       line-height: 30px; } }
+
+@-webkit-keyframes backdrop {
+  100% {
+    background-position: -3004px 0; } }
+
+@keyframes backdrop {
+  100% {
+    background-position: -3004px 0; } }
+
+@-webkit-keyframes float {
+  0% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 70px; } }
+
+@keyframes float {
+  0% {
+    margin-top: 50px; }
+  100% {
+    margin-top: 70px; } }
+
+@-webkit-keyframes blastoff {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -2299px; } }
+
+@keyframes blastoff {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -2299px; } }
+
+@-webkit-keyframes flicker {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -170px; } }
+
+@keyframes flicker {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -170px; } }
+
+@-webkit-keyframes on {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -85px; } }
+
+@keyframes on {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -85px; } }
 
 .navigationwrap {
   height: 0rem;
@@ -3214,6 +3282,9 @@ header {
       header h1 {
         font-size: 32px !important;
         margin: 14px 0px 15px 0px !important; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      header h1 {
+        margin: 74px 0px 15px 0px; } }
   header h2 {
     font-size: 40px;
     text-align: center;
@@ -3228,53 +3299,88 @@ header {
     font-size: 31.76px;
     text-align: center;
     line-height: 41px; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      header p {
+        font-size: 25.76px;
+        line-height: 38px; } }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       header p {
         font-size: 21px;
         line-height: 34px; } }
-  header .moon {
-    position: absolute;
-    bottom: 244px;
-    left: 338px;
-    visibility: hidden;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s; }
-  header .planet {
-    position: absolute;
-    bottom: 276px;
-    right: 305px;
-    visibility: hidden;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s; }
-  header .earth {
-    position: absolute;
-    bottom: 200px;
-    right: 448px;
-    visibility: hidden;
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s; }
-  header .woozyLogo {
-    margin-top: 91px; }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      header .woozyLogo {
-        margin-bottom: 30px;
-        max-width: 150px;
-        display: block; } }
-    @media (max-width: 373px) {
-      header .woozyLogo {
-        max-width: 130px; } }
-  header .appStoreGray {
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .store {
+    max-width: inherit;
+    margin: 0; } }
+
+.moon {
+  position: absolute;
+  bottom: 244px;
+  left: 338px;
+  visibility: hidden;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .moon {
+      left: 138px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .moon {
+      display: none; } }
+
+.planet {
+  position: absolute;
+  bottom: 276px;
+  right: 305px;
+  visibility: hidden;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .planet {
+      right: 76px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .planet {
+      display: none; } }
+
+.earth {
+  position: absolute;
+  bottom: 200px;
+  right: 448px;
+  visibility: hidden;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .earth {
+      right: 207px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .earth {
+      display: none; } }
+
+.woozyLogo {
+  margin-top: 91px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .woozyLogo {
+      margin-bottom: 30px;
+      max-width: 150px;
+      display: block; } }
+  @media (max-width: 373px) {
+    .woozyLogo {
+      max-width: 130px; } }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .appStore, .googleStore {
+    max-width: 60%;
     display: block;
-    margin: 50px auto 0px auto; }
-  header .pageDown {
-    display: block;
-    margin: 50px auto 0px auto;
-    -webkit-animation: float 1s 2s linear infinite alternate;
-    animation: float 1s 2s linear infinite alternate; }
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      header .pageDown {
-        -webkit-animation: none;
-        animation: none; } }
+    margin: 0 auto 15px auto; } }
+
+.pageDown {
+  display: block;
+  margin: 50px auto 0px auto;
+  -webkit-animation: float 1s 2s linear infinite alternate;
+  animation: float 1s 2s linear infinite alternate; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .pageDown {
+      -webkit-animation: none;
+      animation: none; } }
 
 .mobileIcon {
   cursor: pointer;
@@ -3414,65 +3520,12 @@ header {
       .social ul li a img {
         margin: 0px 12px 0px 0px; }
 
-@-webkit-keyframes backdrop {
-  100% {
-    background-position: -3004px 0; } }
-
-@keyframes backdrop {
-  100% {
-    background-position: -3004px 0; } }
-
-@-webkit-keyframes float {
-  0% {
-    margin-top: 50px; }
-  100% {
-    margin-top: 70px; } }
-
-@keyframes float {
-  0% {
-    margin-top: 50px; }
-  100% {
-    margin-top: 70px; } }
-
-@-webkit-keyframes blastoff {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -2299px; } }
-
-@keyframes blastoff {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -2299px; } }
-
-@-webkit-keyframes flicker {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -170px; } }
-
-@keyframes flicker {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -170px; } }
-
-@-webkit-keyframes on {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -85px; } }
-
-@keyframes on {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 0 -85px; } }
-
 .report {
   min-height: 986px;
   position: relative; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .report {
+      min-height: 916px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .report {
       padding: 25px;
@@ -3481,10 +3534,27 @@ header {
     margin-top: 10px;
     visibility: hidden;
     display: none; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .report .sickMobile {
+        display: block;
+        margin: 41px auto 0px auto;
+        position: relative;
+        top: 26px; } }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .report .sickMobile {
+        min-width: 259px;
+        display: block; } }
   .report .sky {
     position: relative;
     margin: 0 auto;
     max-width: 1000px; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .report .sky {
+        display: none; } }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .report .sky {
+        width: 100%;
+        padding: 0 20px; } }
     .report .sky .leftCloud {
       position: absolute;
       visibility: hidden;
@@ -3532,6 +3602,10 @@ header {
       top: 25px;
       display: none;
       height: auto; }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .report .sky .sickBlurb {
+          left: 222px;
+          top: 25px; } }
     .report .sky .blastoff {
       background: url(/assets/img/blastoff.png) no-repeat;
       width: 102px;
@@ -3554,6 +3628,17 @@ header {
       margin: 159px 0px 0px 150px;
       transform: rotate(25deg);
       display: none; }
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        .report .sky .rocketship {
+          display: none; } }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobileRocket {
+    position: absolute;
+    max-width: 75%;
+    right: 66px;
+    top: 13px;
+    display: block !important; } }
 
 .track {
   min-height: 808px;
@@ -3613,6 +3698,15 @@ header {
   height: 211px;
   margin-left: -452px;
   margin-top: -169.5px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .track img.town {
+      padding: 0px 20px;
+      height: auto;
+      margin: 0px;
+      position: absolute;
+      max-width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -78%); } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .track img.town {
       height: auto;
@@ -3695,10 +3789,21 @@ header {
       display: none;
       margin: 0 auto; } }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .track .trackTablet {
+    display: block; } }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .highSchool, .cafe {
+    display: none; } }
+
 .play {
   height: 695px;
   background: #05ad7d;
   background: url(/assets/img/bg-lawn.png) #05ad7d 50% 50% no-repeat; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .play {
+      height: 600px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .play {
       height: auto; } }
@@ -3710,6 +3815,9 @@ header {
   .play .playImage {
     margin: 117px auto 40px auto;
     display: block; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .play .playImage {
+        margin: 145px 0px 0px 0px; } }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .play .playImage {
         margin: 21px auto 40px auto;
@@ -3720,6 +3828,9 @@ header {
   background: #ca4949;
   position: relative;
   overflow: hidden; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .learn {
+      min-height: 550px; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .learn {
       min-height: inherit; } }
@@ -3731,6 +3842,9 @@ header {
     display: block;
     position: relative;
     z-index: 50; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .learn h2 {
+        padding: 317px 0px 0px 0px; } }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .learn h2 {
         padding: 265px 0px 0px 0px; } }
@@ -3774,15 +3888,27 @@ header {
   margin-left: -24.5px;
   margin-top: -43.5px;
   z-index: 500; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .lightbulb {
+      top: 47%; } }
   .lightbulb.active {
     -webkit-animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
     animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards; }
 
 .learnAtom {
   margin: 0px 70px; }
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    .learnAtom {
-      margin: 0 13px; } }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .lightPole, .lightbulb, #park {
+    display: none; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learnIcon {
+    display: none; } }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .learnAtom, .learnBook, .learnBeaker {
+    display: none; } }
 
 #park {
   position: absolute;
@@ -3792,6 +3918,9 @@ header {
   z-index: 50;
   display: none;
   left: 8px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #park {
+      left: 4px; } }
 
 .teamWrap {
   background: #5eccc4;

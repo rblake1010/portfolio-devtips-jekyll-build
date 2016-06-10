@@ -1,6 +1,9 @@
 .report{
 	min-height:986px;
 	position: relative;
+	@include media($tablet){
+		min-height: 916px;
+	}
 	@include media($mobile){
 		padding:25px;
 		min-height: inherit;
@@ -9,11 +12,28 @@
 		margin-top: 10px;
 		visibility: hidden;
 		display: none;
+		@include media($tablet){
+			display: block;
+	    margin: 41px auto 0px auto;
+	    position: relative;
+	    top: 26px;
+		}
+		@include media($mobile){
+			min-width: 259px;
+    	display: block
+		}
 	}
 	.sky{
 		position:relative;
 		margin:0 auto;
 		max-width: 1000px;
+		@include media($tablet){
+			display: none;
+		}
+		@include media($mobile){
+			width: 100%;
+    	padding: 0 20px;
+		}
 		.leftCloud{
 			@include cloud;
 			right: 500px;
@@ -61,6 +81,10 @@
 			top:25px;
 			display: none;
 			height: auto;
+			@include media($tablet){
+				left: 222px;
+    		top: 25px
+			}
 		}
 		.blastoff{
 			background: url(/assets/img/blastoff.png) no-repeat;
@@ -86,6 +110,19 @@
 			margin: 159px 0px 0px 150px;
 			transform: rotate(25deg);
 			display: none;
+			@include media($mobile){
+		    display: none;
+		  }
 		}
+	}
+}
+
+.mobileRocket{
+	@include media($mobile){
+		position: absolute;
+    max-width: 75%;
+    right: 66px;
+    top: 13px;
+    display: block !important;
 	}
 }

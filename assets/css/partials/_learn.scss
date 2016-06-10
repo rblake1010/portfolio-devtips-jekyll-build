@@ -3,6 +3,9 @@
 	background:#ca4949;
 	position: relative;
 	overflow:hidden;
+	@include media($tablet){
+		min-height: 550px;
+	}
 	@include media($mobile){
 		min-height: inherit;
 	}
@@ -15,6 +18,9 @@
 	  display: block;
 	  position: relative;
 	  z-index: 50;
+	  @include media($tablet){
+	  	padding: 317px 0px 0px 0px;
+	  }
 	  @include media($mobile){
 			padding: 265px 0px 0px 0px;
 	  }
@@ -63,6 +69,9 @@
   margin-left: -24.5px;
   margin-top: -43.5px;
   z-index: 500;
+  @include media($tablet){
+		top: 47%;
+  }
   &.active{
   	-webkit-animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
 		animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
@@ -71,10 +80,25 @@
 
 .learnAtom{
 	margin: 0px 70px;
-	@include media($mobile){
-		margin:0 13px;
-	}
 }
+
+.lightPole, .lightbulb, #park{
+	@include media($mobile){
+    display: none;
+  }
+}
+
+.learnIcon{
+	@include media($tablet){
+	display: none;
+ }
+}
+
+.learnAtom, .learnBook, .learnBeaker{
+	@include media($mobile){
+    display: none;
+  }
+ }
 
 #park{
 	position: absolute;
@@ -84,4 +108,7 @@
   z-index:50;
   display:none;
   left:8px;
+  @include media($tablet){
+		left: 4px;
+  }
 }
