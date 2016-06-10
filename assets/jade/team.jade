@@ -1,0 +1,18 @@
+.teamWrap
+	.container
+		.row
+			.team
+				h2 {{site.data.settings.team-title}}
+
+				| {% if site.data.settings.team-blurb %}
+				p  {{site.data.settings.team-blurb}}
+				| {% endif %} 
+
+				.members
+					| {% for member in site.data.settings.team-members %}
+					.person
+						img(src="assets/img/{{member.img}}", alt="{{member.title}}-{{member.name}}")
+						p.name {{member.name}}
+						p.title {{member.title}}
+					| {% endfor %} 
+					

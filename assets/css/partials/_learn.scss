@@ -1,0 +1,87 @@
+.learn{
+	min-height:857px;
+	background:#ca4949;
+	position: relative;
+	overflow:hidden;
+	@include media($mobile){
+		min-height: inherit;
+	}
+	.container{
+		z-index: 500;
+	}
+	h2{
+		padding: 403px 0px 0px 0px;
+	  text-align: center;
+	  display: block;
+	  position: relative;
+	  z-index: 50;
+	  @include media($mobile){
+			padding: 265px 0px 0px 0px;
+	  }
+	}
+	p{		
+	  text-align: center;	  
+	  position: relative;
+	  @include media($mobile){
+			padding: 265px 0px 0px 0px;
+	  }
+	}
+}
+
+.comingSoon{
+	position:absolute;
+	top:0px;
+	left:77px;
+	@include media($mobile){
+		top: 50%;
+    left: 50%;
+    width: 203px;
+    height: 220px;
+    margin-left: -101.5px;
+    margin-top: -234px;
+	}
+}
+
+.lightPole{
+	position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 3px;
+  height: 191px;
+  margin-left: -1.5px;
+  margin-top: -0.5px;
+  z-index: 500;
+}
+
+.lightbulb{
+	width: 49px;
+  background: url(/assets/img/lightbulb_sprite.png) no-repeat;
+  height: 82px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -24.5px;
+  margin-top: -43.5px;
+  z-index: 500;
+  &.active{
+  	-webkit-animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
+		animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
+  }
+}
+
+.learnAtom{
+	margin: 0px 70px;
+	@include media($mobile){
+		margin:0 13px;
+	}
+}
+
+#park{
+	position: absolute;
+  top: 195px;
+  z-index: 5;
+  overflow: hidden;   
+  z-index:50;
+  display:none;
+  left:8px;
+}

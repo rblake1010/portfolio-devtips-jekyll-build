@@ -20,3 +20,18 @@ track-blurb: Reports from your <strong>community</strong> are compiled in the <s
 verify-title: Verify
 verify-blurb: As a <strong>health care professional or school administrator</strong>, you can request a verified account to share reports with your community.
 verify-image: verifyImage.png
+
+learn-title: Learn
+learn-blurb: Be in the know, on-the-go, with quick access to helpful resources in our Woozy Lab.
+
+team-title: Our Team
+team-blurb: 
+
+team-members:
+  - {name: Debbie Peterson,title: Co-Founder, img: debbie.png}
+  - {name: Katherine Manouchehri, title: Co-Founder,  img: kat.png}
+  - {name: Allie Kohr, title: Co-Founder, img: allie.png}
+
+
+footer-title: Feelin' Woozy
+footer-blurb: Woozy's online community aims to keep you and your loved ones informed in your real-life community. Let us know how we're doing!

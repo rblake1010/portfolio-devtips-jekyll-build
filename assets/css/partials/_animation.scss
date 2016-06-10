@@ -20,7 +20,7 @@
   100% {margin-top: 70px;}
 }
 
-
+// Rocket Flame Sprite
 @-webkit-keyframes blastoff {
   0% {background-position: 0 0;}
   100% {background-position: 0 -2299px;}
@@ -28,4 +28,27 @@
 @keyframes blastoff {
   0% { background-position: 0 0;}
   100% {background-position: 0 -2299px;}
+}
+
+// Light Bulb Flicker
+
+@-webkit-keyframes flicker {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 -170px;}   
+}
+
+@keyframes flicker {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 -170px;}   
+}
+
+// Light Bulb On
+@-webkit-keyframes on {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 -85px;}   
+}
+
+@keyframes on {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 -85px;}   
 }

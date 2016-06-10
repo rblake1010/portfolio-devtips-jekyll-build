@@ -3446,6 +3446,30 @@ header {
   100% {
     background-position: 0 -2299px; } }
 
+@-webkit-keyframes flicker {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -170px; } }
+
+@keyframes flicker {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -170px; } }
+
+@-webkit-keyframes on {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -85px; } }
+
+@keyframes on {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -85px; } }
+
 .report {
   min-height: 986px;
   position: relative; }
@@ -3690,6 +3714,250 @@ header {
       .play .playImage {
         margin: 21px auto 40px auto;
         display: block; } }
+
+.learn {
+  min-height: 857px;
+  background: #ca4949;
+  position: relative;
+  overflow: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .learn {
+      min-height: inherit; } }
+  .learn .container {
+    z-index: 500; }
+  .learn h2 {
+    padding: 403px 0px 0px 0px;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 50; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .learn h2 {
+        padding: 265px 0px 0px 0px; } }
+  .learn p {
+    text-align: center;
+    position: relative; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .learn p {
+        padding: 265px 0px 0px 0px; } }
+
+.comingSoon {
+  position: absolute;
+  top: 0px;
+  left: 77px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .comingSoon {
+      top: 50%;
+      left: 50%;
+      width: 203px;
+      height: 220px;
+      margin-left: -101.5px;
+      margin-top: -234px; } }
+
+.lightPole {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 3px;
+  height: 191px;
+  margin-left: -1.5px;
+  margin-top: -0.5px;
+  z-index: 500; }
+
+.lightbulb {
+  width: 49px;
+  background: url(/assets/img/lightbulb_sprite.png) no-repeat;
+  height: 82px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -24.5px;
+  margin-top: -43.5px;
+  z-index: 500; }
+  .lightbulb.active {
+    -webkit-animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards;
+    animation: flicker 0.3s steps(2) 6, on 0.2s 2s steps(1) forwards; }
+
+.learnAtom {
+  margin: 0px 70px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .learnAtom {
+      margin: 0 13px; } }
+
+#park {
+  position: absolute;
+  top: 195px;
+  z-index: 5;
+  overflow: hidden;
+  z-index: 50;
+  display: none;
+  left: 8px; }
+
+.teamWrap {
+  background: #5eccc4;
+  padding: 6em 0 3em 0; }
+  .teamWrap .team h2, .teamWrap .team p {
+    text-align: center; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .teamWrap .team p {
+      font-size: 19px;
+      line-height: 28px; } }
+
+.members {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .members {
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .members {
+      display: block; } }
+
+.person {
+  margin: 0px 81px 80px 0px; }
+  @media screen and (min-width: 942px) and (max-width: 1140px) {
+    .person {
+      margin: 0px 30px 80px 0px; } }
+  @media screen and (min-width: 768px) and (max-width: 942px) {
+    .person {
+      margin: 0px 0px 14px 0px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .person {
+      margin: 25px 0px 0px 0px; } }
+  .person:nth-child(3n) {
+    margin-right: 0; }
+  .person img {
+    display: block;
+    margin: 0 auto; }
+  .person p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    line-height: 31px;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .person p {
+        font-size: 19px;
+        line-height: 28px; } }
+    .person p.title {
+      font-weight: bold; }
+
+.footerWrap {
+  background: #393939;
+  padding: 70px 0 70px 0; }
+  @media (max-width: 414px) {
+    .footerWrap {
+      padding: 20px 15px 10px 15px; } }
+  .footerWrap .footer {
+    overflow: hidden; }
+    @media (max-width: 414px) {
+      .footerWrap .footer {
+        padding: 70px 15px 10px 15px; } }
+    @media (max-width: 1170px) {
+      .footerWrap .footer {
+        padding: 70px 15px 70px 15px; } }
+
+.left h3 {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0 0 20px 0; }
+  @media (max-width: 376px) {
+    .left h3 {
+      font-size: 23px; } }
+
+.left p {
+  font-size: 20px;
+  line-height: 38px; }
+  @media (max-width: 376px) {
+    .left p {
+      font-size: 17px; } }
+
+.left button {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: 3px solid #fff;
+  width: 150px;
+  height: 45px;
+  color: #ffffff;
+  padding: 20px 0;
+  padding: 8px; }
+  .left button a {
+    color: #fff;
+    display: block;
+    line-height: 29px;
+    height: 25px;
+    text-decoration: none; }
+    .left button a:hover {
+      background: #05ad7d; }
+
+.left img {
+  margin: 0 0 20px 0; }
+  @media (max-width: 376px) {
+    .left img {
+      width: 155px; } }
+
+.right {
+  margin: 0; }
+  .right .app {
+    float: right; }
+    @media (max-width: 414px) {
+      .right .app {
+        float: left; } }
+    .right .app img {
+      float: right;
+      margin: 0 10px 3px 0; }
+      @media (max-width: 450px) {
+        .right .app img {
+          float: left;
+          margin: 0 0px 10px 0; } }
+  .right .reward {
+    text-align: center;
+    margin-bottom: 40px;
+    overflow: hidden; }
+    @media (max-width: 530px) {
+      .right .reward {
+        margin-top: 10px; } }
+    @media (max-width: 933px) {
+      .right .reward {
+        margin-top: -11px; } }
+    .right .reward img {
+      float: right; }
+      @media (max-width: 530px) {
+        .right .reward img {
+          float: left; } }
+  .right .copyright {
+    margin-top: 35px;
+    float: right; }
+    .right .copyright p {
+      text-align: right;
+      color: #a9a9a9;
+      font-size: 15px; }
+      @media (max-width: 460px) {
+        .right .copyright p {
+          text-align: left; } }
+      .right .copyright p a {
+        color: #fff;
+        text-decoration: none; }
+    .right .copyright img {
+      float: right;
+      margin-bottom: 10px; }
+      @media (max-width: 460px) {
+        .right .copyright img {
+          float: left; } }
 
 .wrapper {
   overflow: hidden; }
