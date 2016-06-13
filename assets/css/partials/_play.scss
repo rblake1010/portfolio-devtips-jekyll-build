@@ -10,6 +10,9 @@
   }
   .playContent{
   	margin:270px 0px 0px 0px;
+    @include media($tablet){
+      margin: 200px 0px 0px 0px;
+    }
   	@include media($mobile){
   		margin:30px 0px 0px 0px;
   	}

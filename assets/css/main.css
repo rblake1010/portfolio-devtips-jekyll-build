@@ -3366,6 +3366,11 @@ header {
     .woozyLogo {
       max-width: 130px; } }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .appStore, .googleStore {
+    display: block;
+    float: none; } }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .appStore, .googleStore {
     max-width: 60%;
@@ -3809,6 +3814,9 @@ header {
       height: auto; } }
   .play .playContent {
     margin: 270px 0px 0px 0px; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .play .playContent {
+        margin: 200px 0px 0px 0px; } }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       .play .playContent {
         margin: 30px 0px 0px 0px; } }
