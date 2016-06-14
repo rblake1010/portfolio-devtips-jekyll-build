@@ -62,7 +62,9 @@ gulp.task('sass', function () {
 
  gulp.task('jade',function(){
     return gulp.src('assets/jade/*.jade')
-    .pipe(jade())
+    .pipe(jade({
+        pretty : '\t'
+    }))
     .pipe(gulp.dest('_includes'));
  });
 
