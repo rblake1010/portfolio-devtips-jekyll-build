@@ -11,5 +11,9 @@ body{
 	@include media($tablet){
 		overflow-x: hidden;
 	}
+	&.privacy{
+		background:#fff;
+		font-family: 'Source Sans Pro', sans-serif; 
+	}
 }
 
