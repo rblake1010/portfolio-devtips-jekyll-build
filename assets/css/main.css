@@ -4112,3 +4112,27 @@ header {
     margin-top: 55px; }
   .privacy header .mobileIcon {
     top: 55px; }
+
+.policy {
+  background: #fff;
+  padding-bottom: 30px; }
+  .policy h1 {
+    color: #000;
+    padding-top: 18px;
+    font-family: 'jaapokkiregular', 'Arial Black', sans-serif;
+    font-size: 30px; }
+  .policy p {
+    color: #000; }
+  .policy ol {
+    margin-left: 15px; }
+    .policy ol li {
+      list-style-type: upper-roman; }
+  .policy ul.address {
+    margin-top: -10px; }
+    .policy ul.address li {
+      padding: 0px;
+      margin: 0px;
+      list-style-type: none; }
+      .policy ul.address li a {
+        text-decoration: underline;
+        color: #000; }

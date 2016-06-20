@@ -14,3 +14,37 @@
 		}
 	}
 }
+
+.policy{
+	background:#fff;
+	padding-bottom:30px;
+	h1{
+		color: #000;
+		padding-top:18px;
+		font-family: 'jaapokkiregular', 'Arial Black', sans-serif;
+ 	  font-size: 30px;
+	}
+	p{
+		color: #000;
+	}
+	ol{
+		margin-left: 15px;
+		li{
+			list-style-type: upper-roman;
+		}
+	}
+	ul{
+		&.address{
+			margin-top: -10px;
+			li{
+				padding:0px;
+				margin:0px;
+				list-style-type: none;
+				a{
+					text-decoration: underline;
+					color:#000;
+				}
+			}
+		}
+	}
+}
