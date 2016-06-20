@@ -1,5 +1,6 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
+var markdown    = require('gulp-markdown');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
@@ -56,12 +57,23 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+
+/**
+ * Watch markdown for changes and recompile
+ */
+
+ gulp.task('markdown', function () {
+    return gulp.src('assets/markdown/*.md')
+        .pipe(markdown())
+        .pipe(gulp.dest('_includes'))
+});
+
 /**
  * Watch Jade/Pug for changes and recompile
  */
 
- gulp.task('jade',function(){
-    return gulp.src(['assets/jade/*.jade', 'assets/jade/privacy/*.jade' ])
+ gulp.task('jade', ['markdown'], function(){
+    return gulp.src(['assets/jade/*.jade', 'assets/jade/privacy/*.jade', 'assets/jade/privacy/*.pug' ])
     .pipe(jade({
         pretty : '\t'
     }))
@@ -75,7 +87,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*','_data/*','assets/js/*'], ['jekyll-rebuild']);
-    gulp.watch('assets/jade/**', ['jade']);
+    gulp.watch(['assets/jade/**', 'assets/markdown/**'], ['jade']);
 });
 
 /**

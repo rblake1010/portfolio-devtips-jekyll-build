@@ -4122,7 +4122,10 @@ header {
     font-family: 'jaapokkiregular', 'Arial Black', sans-serif;
     font-size: 30px; }
   .policy p {
-    color: #000; }
+    color: #000;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px; }
   .policy ol {
     margin-left: 15px; }
     .policy ol li {
