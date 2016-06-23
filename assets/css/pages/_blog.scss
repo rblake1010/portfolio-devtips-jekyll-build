@@ -1,0 +1,21 @@
+body.blog{
+	a{
+		color:$blog-link-color;
+		&:hover, &:focus{
+			color:#c64242;
+		}
+	}
+	h1{
+		font-size: 50px;
+		color:$blog-white;
+		margin:0px;
+	}
+	h2{
+		font-size: 20.89px;
+		color:#333333;
+	}
+	h3{
+		font-size: 18.08px;
+		color:$blog-header-color;
+	}
+}

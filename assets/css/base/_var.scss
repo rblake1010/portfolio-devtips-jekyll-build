@@ -3,13 +3,12 @@
 //
 
 // Colors
-$accent:  #e1c184;  
-
-
 
 
 // font
 $baseFontSize: 16; 
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Source Sans Pro', sans-serif;
  
 //mixins
 @mixin social-icon{

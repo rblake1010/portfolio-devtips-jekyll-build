@@ -73,7 +73,7 @@ gulp.task('sass', function () {
  */
 
  gulp.task('jade', ['markdown'], function(){
-    return gulp.src(['assets/jade/*.jade', 'assets/jade/privacy/*.jade', 'assets/jade/privacy/*.pug' ])
+    return gulp.src(['assets/jade/*.jade', 'assets/jade/privacy/*.jade', 'assets/jade/blog/*.jade' ])
     .pipe(jade({
         pretty : '\t'
     }))

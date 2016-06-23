@@ -1,0 +1,17 @@
+include ../mixins/nav
+.headerWrap
+	.container
+		.row
+			header
+				.container
+					.row
+						.logo.three.columns
+							a(href="http://woozylabs.com")
+								img.woozyLogo(src="assets/img/logo.png", alt="Woozy Labs Logo")
+						img.mobileIcon(src="assets/img/mobileIcon.png")
+						.six.columns.u-pull-right.nav
+							+nav
+
+						.blogIntro
+							h1 Blog
+							p Helpful How Tos, Tips, and Resources to Keep You and Your Family Healthy and Happy
