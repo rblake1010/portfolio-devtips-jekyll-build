@@ -1,0 +1,22 @@
+
+<div class="mainContent">
+	<div class="container">
+		<div class="row">
+			<div class="blogLeft eight columns">{% for post in site.posts %}
+				<div class="post"><a href="{{post.url | prepend:site.baseurl}}">
+						<div class="post-image box" style="background-image: url(assets/img/blog/{{post.featured}})"></div></a>
+					<div class="post-content box"><span class="time">{{post.date | date_to_string}}</span>
+						<h1><a href="{{post.url | prepend:site.baseurl}}">{{post.title}}</a></h1>
+						<div class="author"><img class="avatar" src="assets/img/blog/{{post.avatar}}"/><span class="author-name">{{post.author}}	</span></div>
+						<div class="tags"><span class="tags-title">Tags:</span>
+							<ul class="post-tags">{% for tag in post.tags %}
+								<li><a>{{tag}}		</a></li>{% endfor %}	
+							</ul>
+						</div>
+					</div>
+				</div>{% endfor %} 
+			</div>
+			<aside class="three columns u-pull-right">hello test</aside>
+		</div>
+	</div>
+</div>

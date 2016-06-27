@@ -1,0 +1,21 @@
+.mainContent
+	.container
+		.row
+			.blogLeft.eight.columns
+				| {% for post in site.posts %}
+				.post
+					a(href="{{post.url | prepend:site.baseurl}}"): .post-image.box(style="background-image: url(assets/img/blog/{{post.featured}})")
+					.post-content.box
+						span.time {{post.date | date_to_string}}
+						h1: a(href="{{post.url | prepend:site.baseurl}}") {{post.title}}
+						.author
+							img.avatar(src="assets/img/blog/{{post.avatar}}")
+							span.author-name {{post.author}}	
+						.tags
+							span.tags-title Tags:
+							ul.post-tags
+								| {% for tag in post.tags %}
+								li: a {{tag}}		
+								| {% endfor %}	
+				| {% endfor %} 
+			aside.three.columns.u-pull-right hello test
